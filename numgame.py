@@ -1,16 +1,16 @@
 import random
 
-top_of_range = input("type of number: ")
+top_of_range = input("Type of number:- ")
 
 if top_of_range.isdigit():
     top_of_range = int(top_of_range)
 
     if top_of_range <= 0:
-        print('please type number larger than 0')
+        print('Please type number larger than 0.')
         quit()
 
 else:
-    print('please type a number: ')
+    print('Please type a number.')
     quit()
 
 #low_of_range = input("type a number: ")
@@ -21,19 +21,19 @@ guesess = 0
 
 while True:
     guesess +=1
-    guess = input('make a guess: ')
+    guess = input('Make a guess:- ')
     if guess.isdigit():
         guess = int(guess)
     else:
-        print("Type a Number: ")
+        print("Type a Number.")
         continue
 
     if guess == random_number:
-        print("You got it correct :  ")
+        print("You got it correct.")
         break
     elif guess > random_number:
-        print("you are above the number: ")
+        print("You're guess is greater than randomly generated number.")
     else:
-        print("you are below the number: ") 
+        print("You're guess is smaller than randomly generated number.") 
 
 print("You got it in ", guesess, "guesess")
