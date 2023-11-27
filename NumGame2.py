@@ -11,7 +11,7 @@ if upper_range:
         print("Enter a larger number than '0': ")
 
 else:
-    print("Please enter a number.")
+    print("Please enter a number: ")
 
 if lower_range:
     print(lower_range)
@@ -32,15 +32,15 @@ while True:
     if guess.isdigit():
         guess = int(guess)
     else:
-        print("Type a number.")
+        print("Type a number: ")
         continue
 
     if guess == random_num:
-        print("You guessed correctly.")
+        print("You guessed correctly.... ")
         break
     elif guess > random_num:
-        print("Your guess is above the number.")
+        print("Your guess is above the number... ")
     else:
-        print("Your guess is below the number.")
+        print("Your guess is below the number... ")
 
 print("You got it in", guesses, "guesses.")
