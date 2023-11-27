@@ -2,8 +2,8 @@ import random
 
 top_of_range = input("type of number: ")
 
-if top_of_range:#.isdigit():
-    #top_of_range = int(top_of_range)
+if top_of_range.isdigit():
+    top_of_range = int(top_of_range)
 
     if top_of_range <= 0:
         print('please type number larger than 0')
